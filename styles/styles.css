@@ -147,6 +147,7 @@ header {
 }
 
 .ropa1{
+    display: flex;
      padding: 15px;
      width: 95%;
      height: 85px;
