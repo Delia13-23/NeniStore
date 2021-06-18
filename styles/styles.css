@@ -233,6 +233,9 @@ ul.slider li:target{
 }
 
 /* Estilos Delia */
+#hashtag{
+    text-align: center;
+}
 .h1-principal{
     flex: auto;
 }
