@@ -4,7 +4,7 @@
 
 header {
     /*background-color: #F26671;*/
-    background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); 
+    background: linear-gradient(to right, #fff19a 0%, #fff19a 0%, #fff19a 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); 
     display: flex;
     flex-direction: column;
 }
@@ -75,7 +75,8 @@ header {
 }
 
 .div3_header > nav > a {
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
+    color: #c76284;
     text-decoration:none;
     justify-content: start;
     font: 120% sans-serif;
@@ -103,8 +104,142 @@ header {
     font-size: 1.5em;
     padding: 0 2%;
 }
+/* Redes */
+.red{
+    position: fixed;
+    top: 350px;
+    left: 0;
+}
+
+#facebook a{
+    background: #3b5998;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 55px;
+    transition: all .3s ease;
+}
+
+#facebook a:hover{
+    background: #000;
+    padding: 10px 50px;
+}
+
+#instagram a{
+    background: #e650d9;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 55px;
+    transition: all .3s ease;
+}
+
+#instagram a:hover{
+    background: #000;
+    padding: 10px 50px;
+}
+
+#twitter a{
+    background: #55acee;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 55px;
+    transition: all .3s ease;
+}
+#twitter a:hover{
+    background: #000;
+    padding: 10px 50px;
+}
+
+#correo a{
+    background: #e95950;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 55px;
+    transition: all .3s ease;
+}
+
+#correo a:hover{
+    background: #000;
+    padding: 10px 50px;
+}
+/* Slider */
+.container-slider{
+    margin:auto;
+    background-color: #fff;
+    width: 800px;
+    padding: 30px;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #fff;
+    transition: opacity .5s;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 100%;
+}
 
 /* Estilos Delia */
+.h1-principal{
+    flex: auto;
+}
+.logo-img{
+   display: flex;
+   flex-direction: row;
+}
 
 .principal-img{
     background-color: white;
