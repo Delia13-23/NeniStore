@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    /*background-color: #F26671;*/
+    background: linear-gradient(to right, #fff19a 0%, #fff19a 0%, #fff19a 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); 
+    display: flex;
+    flex-direction: column;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.h1-1 {
+    color: blanchedalmond;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+
+}
+
+.div2_header {
+    background: linear-gradient(to right, #f1ecb4, rgb(252, 233, 233));
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.menu1 {
+    padding: 3% 0 1%;
+    margin: auto;
+}
+
+.menu1 > a {
+    color: brown;
+    text-decoration:none;
+    font: 110% sans-serif;
+    padding: 0 .5%;
+}
+
+.menu1 > a:hover {
+	background-color: #b12a5b;
+	color: #fff;
+}
+
+.titulo {
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 300%;
+    margin: 0;  
+    padding: 0;  
+}
+
+.titulo > p {
+    margin: 0;  
+}
+
+.div3_header > nav > a {
+    /* color: blanchedalmond; */
+    color: #c76284;
+    text-decoration:none;
+    justify-content: start;
+    font: 120% sans-serif;
+    padding: 0 1%;
+}
+
+.div3_header > nav > a:hover {
+	color: #b12a5b;
+}
+
+.icons{
+    padding: 30px 0;
+}
+
+.icons > a {
+    text-decoration:none;
+    color: black;
+}
+
+.icons > a:hover {
+    color: #F26671;
+}
+
+.icons > a > i {
+    font-size: 1.5em;
+    padding: 0 2%;
+}
+
+.logo-img{
+    display: flex;
+    flex-direction: row;
+ }
+.h1-principal{
+    flex: auto;
+}
+
+/* video */
+.container-video{
+    display: flex;
+    justify-content: center;
+}
+
+/* Redes */
+.red{
+    position: fixed;
+    top: 350px;
+    left: 0;
+}
+
+#facebook a{
+    background: #3b5998;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 55px;
+    transition: all .3s ease;
+}
+
+#facebook a:hover{
+    background: #000;
+    padding: 10px 50px;
+}
+
+#instagram a{
+    background: #e650d9;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 55px;
+    transition: all .3s ease;
+}
+
+#instagram a:hover{
+    background: #000;
+    padding: 10px 50px;
+}
+
+#twitter a{
+    background: #55acee;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 55px;
+    transition: all .3s ease;
+}
+#twitter a:hover{
+    background: #000;
+    padding: 10px 50px;
+}
+
+#correo a{
+    background: #e95950;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 55px;
+    transition: all .3s ease;
+}
+
+#correo a:hover{
+    background: #000;
+    padding: 10px 50px;
+}
+
+/*Estilos Ángel*/
+
+.h3-footer-1{
+    color: #b12a5b;
+}
+
+.icon{
+    font-size: 1.5em;
+    padding: 0 2%;
+}
+
+button 
+{
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button1 
+{
+	background-color: white;
+ 	color: black;
+ 	border: 2px solid #f99185;
+    
+}
+
+.button1:hover 
+{
+	background-color: #b12a5b;
+	color: white;
+}
+
+.grid_footer
+{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.grid_footer Div
+{
+	background-color: rgba(0,0,0,0);
+	color: white;
+	padding: 10%;
+	line-height: 1.4;
+}
+
+footer
+{
+	background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); 
+}
+
+footer p
+{
+	font-family: Century Gothic;
+}
+
+footer h2
+{
+	font-family: 'Arial Black';
+}
