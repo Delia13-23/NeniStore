@@ -1,0 +1,109 @@
+form{
+
+    position: relative;
+    display: grid;
+    width: 100%;
+    max-width: 600px;
+
+    margin: auto;
+    background: linear-gradient(180deg, #F29175 0%, #DA53A2 100%);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+}
+
+form h4{
+
+    position: relative;
+    width: 90%;   
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);ont-family: 'Roboto', sans-serif;
+
+}
+
+#Name{
+
+    grid-area: Name;
+    position: relative;
+
+    padding-left: 5%;
+    margin-bottom: 15px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+
+}
+
+#BEnviar{
+
+    position: relative; 
+    width: 40%;    
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    background: #000000;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+
+    color: #ADADAD;
+
+}
+
+#BEnviar:hover{
+
+    position: relative;
+
+    background: #000000;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+form input{
+
+    position: relative;
+    width: 90%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    line-height: 3;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
