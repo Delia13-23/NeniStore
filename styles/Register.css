@@ -1,0 +1,95 @@
+form{
+
+    position: relative;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #F76B92 0%, rgba(247, 107, 146, 0) 100%);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+
+}
+
+form h4{
+
+    position: relative;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+form #BEnviar{
+
+    position: relative;
+
+    background: #000000;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #ADADAD;
+}
+
+form label{
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+form #BEnviar:hover{
+
+    position: relative;
+
+    background: #000000;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+form input{
+
+    position: relative;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+}

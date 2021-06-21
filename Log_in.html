@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/Register.css">
     <script src="https://kit.fontawesome.com/6145ad21c5.js"></script>
     <title>NeniStore</title>
 </head>
@@ -39,106 +42,23 @@
                 <a href=""><i class="far fa-question-circle"></i></a>
                 <a href=""><i class="fas fa-globe"></i></a>
             </div>
-        </div>
-        <div  class="div3_header">
-            <nav id="main-nav">
-                <a href="C:/Users/DelisS/Downloads/PaginaNenis/html/novedades.html">Novedades</a>
-                <a href="">Vestidos</a>
-                <a href="">Tops</a>
-                <a href="">Bikinis</a>
-                <a href="">Zapatos</a>
-                <a href="C:/Users/DelisS/Downloads/PaginaNenis/html/accesorios.html">Accesorios</a>
-                <a href="">Hogar</a>
-            </nav> 
-        </div>
+        </div> 
     </header>
     <main>
-        <div class="principal">
-            <div class="principal-img">
-                <div class="imagen-principal">
-                    <img src="img/img_principal.png" alt="" class="imagen-about-us">
-                </div>
-            </div>
-        </div>
-        <div class="red">
-           <div id="facebook"><a href="#" class="fa fa-facebook"></a></div>
-           <div id="instagram"><a href="#" class="fab fa-instagram"></a></div>
-           <div id="twitter"><a href="#" class="fa fa-twitter"></a></div>
-           <div id="correo"><a href="#" class="fa fa-envelope"></a></div>
-        </div>
-        <section class="contenedor categoria">
-                <h2>Comprar por categoría</h2>
-            <div class="resume__categorias resume__ropa">
-                
-                <div class="categorias ropa ropa1">
-                    <img src="img/png/005-camiseta.png" alt="Camisetas">
-                    Camisetas
-                </div>
-               <div class="categorias ropa ropa1">
-                    <img src="img/png/006-vestido.png" alt="Vestidos">
-                    Vestidos
-                </div>
-                <div class="categorias ropa ropa1">
-                    <img src="img/png/002-blusa-mujer.png" alt="Blusas">
-                    Blusas
-                </div>
-                <div class="categorias ropa ropa1">
-                    <img src="img/png/004-ropa-interior.png" alt="Trajes de baño">
-                    Trajes de baño
-                </div>
-                <div class="categorias ropa ropa1">
-                    <img src="img/png/001-top-corto.png" alt="Tops sin mangas">
-                    Tops sin mangas
-                </div>
-                <div class="categorias ropa ropa2">
-                    <img src="img/png/008-falda-pantaln.png" alt="Bottoms">
-                    Bottoms
-                </div>
-                <div class="categorias ropa ropa2">
-                    <img src="img/png/007-pantalones.png" alt="Denim">
-                    Denim
-                </div>
-                <div class="categorias ropa ropa2">
-                    <img src="img/png/003-lencera.png" alt="Pijamas y lencerías">
-                    Pijamas y lencerías
-                </div>
-                <div class="categorias ropa ropa2">
-                    <img src="img/png/009-ropa-deportiva.png" alt="Monos y conjuntos">
-                    Monos y conjuntos
-                </div>
-                <div class="categorias ropa ropa2">
-                    <img src="img/png/001-flecha-correcta.png" alt="Ver todo">
-                    Ver todo
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2 id="hashtag">#dailydrops</h2>
-            <div class="container-slider">
-               <ul class="slider">
-                   <li id="slide1">
-                       <img src="img/moda1.jpg" alt="ropa de dama">
-                   </li>
-                   <li id="slide2">
-                       <img src="img/moda2.jpg" alt="ropa de dama">
-                   </li>
-                   <li id="slide3">
-                       <img src="img/moda5.jpg" alt="ropa de niño">
-                   </li>
-               </ul>
-               <ul class="menu">
-                  <li>
-                      <a href="#slide1">1</a>
-                  </li>
-                  <li>
-                      <a href="#slide2">2</a>
-                  </li>
-                  <li>
-                      <a href="#slide3">3</a>
-                  </li>
-               </ul>
-            </div>
-        </section>
+    <form>
+
+        <h4>Registro</h4><br>
+        <label for="email">Correo</label><br>
+        <input type="email"  name="email"placeholder="Ejemplo: Correo@Real.com"><br><br>
+        <label for="phone">Telefono</label><br>
+        <input type="tel"  name="phone" placeholder="Ejemplo: 55 67 58 90 70"><br><br>
+        <label for="password">Contrase&ntilde;a</label><br>
+        <input type="password"  name="password" placeholder="Ejemplo: LaNeniStore20!"><br><br>
+        <label for="password_">Confirmaci&oacute;n de contrase&ntilde;a</label><br>
+        <input type="password"  name="password_" placeholder="Ejemplo: LaNeniStore20!"><br><br>
+        <input id="BEnviar" type="submit" value="Enviar">
+
+    </form>
     </main>
     <footer>
         <div class="grid_footer">
