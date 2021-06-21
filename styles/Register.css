@@ -21,14 +21,8 @@ form{
 form h4{
 
     position: relative;
-
-    width: 15%;    
+    width: 20%;   
     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -37,10 +31,9 @@ form h4{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
     text-align: center;
-
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 3;
     color: #000000;
 
 }
@@ -48,48 +41,60 @@ form h4{
 form label{
 
     position: relative;
- 
+
     display: flex;
-    align-items: flex-start;
+    align-self: flex-start;
+    padding-left: 5%;
+    margin-bottom: 15px;
 
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-
-    text-align: center;
 
     color: #FFFFFF;
 
 }
 
-form #BEnviar{
+#Warning{
 
     position: relative;
-    
-    width: 15%;    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    background: #000000;
-    border: 1px solid #999999;
-    box-sizing: border-box;
-    border-radius: 20px;
-    
+    display: flex;
+    align-self: flex-end;
+    padding-right: 5%;
+
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    color: #ADADAD;
+    font-size: 10px;
+    line-height: 15px;
+
+    color: #000000;
+
 }
 
-form #BEnviar:hover{
+
+#BEnviar{
+
+    position: relative; 
+    width: 40%;    
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    background: #000000;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #ADADAD;
+
+}
+
+#BEnviar:hover{
 
     position: relative;
 
@@ -101,8 +106,6 @@ form #BEnviar:hover{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
     text-align: center;
     color: #FFFFFF;
 
@@ -111,16 +114,19 @@ form #BEnviar:hover{
 form input{
 
     position: relative;
-
     width: 90%;
-    height: 20%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
+    border-radius: 10px;
+    line-height: 3;
+
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
 
 }
