@@ -119,6 +119,18 @@ header {
     justify-content: center;
 }
 
+/* imagenes */
+.container-ropa{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container-ropa img{
+    padding: 10px;
+    border: 1px solid gray;
+}
+
 /* Redes */
 .red{
     position: fixed;
