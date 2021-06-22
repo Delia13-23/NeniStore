@@ -74,19 +74,6 @@ header {
     margin: 0;  
 }
 
-.div3_header > nav > a {
-    /* color: blanchedalmond; */
-    color: #c76284;
-    text-decoration:none;
-    justify-content: start;
-    font: 120% sans-serif;
-    padding: 0 1%;
-}
-
-.div3_header > nav > a:hover {
-	color: #b12a5b;
-}
-
 .icons{
     padding: 30px 0;
 }
