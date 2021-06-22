@@ -45,6 +45,20 @@ header {
     padding-right: 1%;
 }
 
+.div3_header > nav > a {
+    /* color: blanchedalmond; */
+    color: #c76284;
+    text-decoration:none;
+    justify-content: start;
+    font: 120% sans-serif;
+    padding: 0 1%;
+}
+
+.div3_header > nav > a:hover {
+	color: #b12a5b;
+}
+
+
 .menu1 {
     padding: 3% 0 1%;
     margin: auto;
@@ -74,19 +88,6 @@ header {
     margin: 0;  
 }
 
-.div3_header > nav > a {
-    /* color: blanchedalmond; */
-    color: #c76284;
-    text-decoration:none;
-    justify-content: start;
-    font: 120% sans-serif;
-    padding: 0 1%;
-}
-
-.div3_header > nav > a:hover {
-	color: #b12a5b;
-}
-
 .icons{
     padding: 30px 0;
 }
@@ -104,33 +105,6 @@ header {
     font-size: 1.5em;
     padding: 0 2%;
 }
-
-.logo-img{
-    display: flex;
-    flex-direction: row;
- }
-.h1-principal{
-    flex: auto;
-}
-
-/* video */
-.container-video{
-    display: flex;
-    justify-content: center;
-}
-
-/* imagenes */
-.container-ropa{
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-}
-
-.container-ropa img{
-    padding: 10px;
-    border: 1px solid gray;
-}
-
 /* Redes */
 .red{
     position: fixed;
@@ -191,6 +165,139 @@ header {
 #correo a:hover{
     background: #000;
     padding: 10px 50px;
+}
+/* Slider */
+.container-slider{
+    margin:auto;
+    background-color: #fff;
+    width: 800px;
+    padding: 30px;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #fff;
+    transition: opacity .5s;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 100%;
+}
+
+/* Estilos Delia */
+#hashtag{
+    text-align: center;
+}
+.h1-principal{
+    flex: auto;
+}
+.logo-img{
+   display: flex;
+   flex-direction: row;
+}
+
+.principal-img{
+    background-color: white;
+   
+}
+
+.imagen-principal{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-about-us{
+    width: 95%;
+}
+
+.categoria h2{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.resume__ropa{
+    display: grid;
+    grid-template-rows:  1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    margin-top: 350px;
+    margin: 3vh 10%; 
+
+}
+ 
+.ropa{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+     width: 20%;
+     padding: 18px;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 22px;
+}
+
+.ropa1{
+    display: flex;
+     padding: 15px;
+     width: 95%;
+     height: 85px;
+     margin-top: 30px;
+}
+
+.ropa2{
+    padding: 15px;
+    width: 95%;
+    height: 85px; 
+    margin-top: 30px;
 }
 
 /*Estilos Ángel*/
