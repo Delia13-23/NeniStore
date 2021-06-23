@@ -9,9 +9,9 @@
  Nosotros funcionamos como una plataforma intermediara para las personas que quieren vender sus productos y aquellas otras que los quieren comprar. Por medio de 
  nuestra página se contactara con la neni a travez de su facebook, la cual pondra las condiciones de entrega del producto.
  
- En nuestra plataforma podran encontrar:
- -Novedades
- -Vestidos
- -Zapatos
- -Accesorios
- -Hogar
+ En nuestra plataforma podran encontrar:<br>
+ -Novedades<br>
+ -Vestidos<br>
+ -Zapatos<br>
+ -Accesorios<br>
+ -Hogar<br>
