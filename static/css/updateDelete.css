@@ -1,0 +1,106 @@
+
+form{
+
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3% auto;
+    background: linear-gradient(180deg, #F29175 0%, #DA53A2 100%);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+}
+
+form label{
+    position: relative;
+
+    align-self: flex-start;
+    padding-left: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+
+}
+
+.cambios{
+    position: relative;   
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+#BEnviar{
+   
+    background: #000000;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+
+    color: #ADADAD;
+
+}
+
+#BEnviar:hover{
+
+    background: #000000;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+form input{
+
+    position: relative;
+    width: 90%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    line-height: 3;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
