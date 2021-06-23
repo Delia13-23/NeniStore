@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/Register.css">
     <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/login.css">
     <script src="https://kit.fontawesome.com/6145ad21c5.js"></script>
     <title>NeniStore</title>
 </head>
@@ -45,23 +45,13 @@
         </div> 
     </header>
     <main>
-    <form>
+    <form action="index.html" method="POST">
 
-        <h4>Registro</h4><br>
-        <label for="NickName">Nombre</label>
-        <input type="text" name="NickName"placeholder="Ejemplo: Neni2000" required><br><br>
-        <label for="email">Correo</label>
+        <h4>Log In</h4><br>
         <input type="email" name="email"placeholder="Ejemplo: Correo@Real.com" required><br><br>
-        <label for="phone">Telefono</label>
-        <input type="tel"  name="phone" placeholder="Ejemplo: 55 67 58 90 70" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required><br><br>
-        <label for="password">Contrase&ntilde;a</label>
         <input type="password"  name="password" placeholder="Ejemplo: LaNeniStore20!" pattern=".{6,}" required><br><br>
-        <label for="password" id="Warning"> Debe contener mas de 6 caracteres </label>
-        <label for="password_">Confirmaci&oacute;n de contrase&ntilde;a</label>
-        <input type="password"  name="password_" placeholder="Ejemplo: LaNeniStore20!" pattern=".{6,}" required><br><br>
-        <label for="password" id="Warning"> Debe contener mas de 6 caracteres </label>
         <input id="BEnviar" type="submit" value="Enviar">
-        <a href="Log_In.html"> Log In </a>
+        <a href="./signUp.html"> Registrate </a>        
 
     </form>
     </main>
