@@ -16,5 +16,4 @@ window.onload = function() {
            ctx.putImageData(imgData,0,0, 25, 25, 200, 182);
        }
     }
-
 }
