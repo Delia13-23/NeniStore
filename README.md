@@ -15,3 +15,5 @@
  -Zapatos<br>
  -Accesorios<br>
  -Hogar<br>
+ 
+ <p style={font-weight:"bold"}>Documentos<p>
