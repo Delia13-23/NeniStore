@@ -45,6 +45,20 @@ header {
     padding-right: 1%;
 }
 
+.div3_header > nav > a {
+    /* color: blanchedalmond; */
+    color: #c76284;
+    text-decoration:none;
+    justify-content: start;
+    font: 120% sans-serif;
+    padding: 0 1%;
+}
+
+.div3_header > nav > a:hover {
+	color: #b12a5b;
+}
+
+
 .menu1 {
     padding: 3% 0 1%;
     margin: auto;
