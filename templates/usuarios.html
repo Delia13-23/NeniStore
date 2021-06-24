@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/accesorios.css">
+    <link rel="stylesheet" href="../static/css/usuarios.css">
     <script src="https://kit.fontawesome.com/6145ad21c5.js"></script>
     <title>NeniStore</title>
 </head>
@@ -23,7 +23,7 @@
         <div class="row div2_header">
             <div>
                 <nav class="menu1 col-5">
-                    <a href="./usuarios.html">Usuarios</a>
+                    <a href="">Usuarios</a>
                 </nav>
             </div>
             <div class="col-4 titulo">
@@ -106,87 +106,57 @@
                 </g>
             </svg>
             <div class="title-principal">
-                <p>Zapatos</p>
+                <p>Usuarios</p>
             </div>
         </div>
-        <div class="container-ropa">
-            <div class="container-ropa1">
-                <img class="ropa" src="../static/img/zapatos/zapatos1.jpg" width="250" height="350" alt="">
-                <p>Sandalias con tira</p>
-                <p class="price">$MXN 219</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/deli.nallely';">Contactar con la Neni</button>
-            </div>
-            <div>
-                <img class="ropa" src="../static/img/zapatos/zapatos2.jpg" width="250" height="350" alt="">
-                <p>Chancletas mudillas</p>
-                <p class="price">$MXN 120</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/edith.jimpin';">Contactar con la Neni</button>
-            </div>
-            <div>
-                <img class="ropa" src="../static/img/zapatos/zapatos3.jpg" width="250" height="350" alt="">
-                <p>Sandalias deportivas</p>
-                <p class="price">$MXN 224</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/Angel11990';">Contactar con la Neni</button>
-            </div>
-            <div>
-                <img class="ropa" src="../static/img/zapatos/zapatos4.jpg" width="250" height="350" alt="">
-                <p>Sandalias planas</p>
-                <p class="price">$MXN 49</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/deli.nallely';">Contactar con la Neni</button>
-            </div>
+        <div class="container-table">
+            <table >
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Telefono</th>
+                        <th>Correo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for usuario in lista_usuarios %}
+                    <tr>
+                        <td>{{usuario.nombre}}</td>
+                        <td>{{usuario.telefono}}</td>
+                        <td>{{usuario.correo}}</td>
+    
+                        <td>
+                            <a href="#modal{{usuario.id}}" id="show-modal" >Editar</a>
+                            <a href="/delete/{{usuario.id}}" id="show-modal">Delete</a>
+                        </td>
+    
+                    </tr>
+                </tbody>
+    
+                <div id="modal{{usuario.id}}" class="modal">
+                    <div class="content-modal">
+                        <header>
+                            <a href="#" class="close-modal">X</a>
+                            <h2>Editar datos de usuario</h2>
+                        </header>
+                        <div>
+                            <form action="{{url_for('update')}}" method="POST">
+                                <label for="nombre">Nombre</label>
+                                <input type="hidden" name="id" value="{{usuario.id}}">
+                                <input type="text" name="nombre"placeholder="Ejemplo: Neni2000" value="{{usuario.nombre}}" ><br><br>
+                                <label for="correo">Correo</label>
+                                <input type="email" name="correo"placeholder="Ejemplo: Correo@Real.com" value="{{usuario.correo}}" required><br><br>
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel"  name="telefono" placeholder="Ejemplo: 55 67 58 90 70" value="{{usuario.telefono}}" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required><br><br>
+                                <button  type="submit" href="/update/{{usuario.id}}">Editar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </table>
         </div>
-        <div class="container-ropa">
-            <div class="container-ropa1">
-                <img class="ropa" src="../static/img/zapatos/zapatos5.jpg" width="250" height="350" alt="">
-                <p>Tacones</p>
-                <p class="price">$MXN 557</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/Angel11990';">Contactar con la Neni</button>
-            </div>
-            <div>
-                <img class="ropa" src="../static/img/zapatos/zapatos6.jpg" width="250" height="350" alt="">
-                <p>Tacones de diseño de mariposas</p>
-                <p class="price">$MXN 751</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/edith.jimpin';">Contactar con la Neni</button>
-            </div>
-            <div>
-                <img class="ropa" src="../static/img/zapatos/zapatos7.jpg" width="250" height="350" alt="">
-                <p>Zapatillas rojas</p>
-                <p class="price">$MXN 625</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/deli.nallely';">Contactar con la Neni</button>
-            </div>
-            <div>
-                <img class="ropa" src="../static/img/zapatos/zapatos8.jpg" width="250" height="350" alt="">
-                <p>Zapatillas gruesas</p>
-                <p class="price">$MXN 675</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/Angel11990';">Contactar con la Neni</button>
-            </div>
-        </div>
-        <div class="container-ropa">
-            <div class="container-ropa1">
-                <img class="ropa" src="../static/img/zapatos/zapatos9.jpg" width="250" height="350" alt="">
-                <p>Zapatillas gruesas</p>
-                <p class="price">$MXN 611</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/deli.nallely';">Contactar con la Neni</button>
-            </div>
-            <div>
-                <img class="ropa" src="../static/img/zapatos/zapatos10.jpg" width="250" height="350" alt="">
-                <p>Zapatillas deportivas negras</p>
-                <p class="price">$MXN 646</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/edith.jimpin';">Contactar con la Neni</button>
-            </div>
-            <div>
-                <img class="ropa" src="../static/img/zapatos/zapatos11.jpg" width="250" height="350" alt="">
-                <p>Zapatos holográficos</p>
-                <p class="price">$MXN 429</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/deli.nallely';">Contactar con la Neni</button>
-            </div>
-            <div>
-                <img class="ropa" src="../static/img/zapatos/zapatos12.jpg" width="250" height="350" alt="">
-                <p>Zapatos de lona</p>
-                <p class="price">$MXN 446</p>
-                <button class="boton" onclick="location.href='https://www.facebook.com/Angel11990';">Contactar con la Neni</button>
-            </div>
-        </div>
+        
     </main>
     <footer>
         <div class="grid_footer">

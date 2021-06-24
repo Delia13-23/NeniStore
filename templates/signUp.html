@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/signUp.css">
     <link rel="stylesheet" href="../static/css/styles.css">
-    <script src="../static/js/events.js"></script>
     <script src="https://kit.fontawesome.com/6145ad21c5.js"></script>
     <title>NeniStore</title>
 </head>
@@ -25,11 +24,7 @@
         <div class="row div2_header">
             <div>
                 <nav class="menu1 col-5">
-                    <a href="">Mujer</a>
-                    <a href="">Curvy + plus</a>
-                    <a href="">Hombre</a>
-                    <a href="">Niños</a>
-                    <a href="">Maquillaje</a>
+                    <a href="./usuarios.html">Usuarios</a>
                 </nav>
             </div>
             <div class="col-4 titulo">
@@ -46,7 +41,7 @@
         </div>
         <div class="div3_header">
             <nav id="main-nav">
-                <a href="./index.html">Inicio</a>
+                <a href="./">Inicio</a>
                 <a href="./novedades.html">Novedades</a>
                 <a href="./vestidos.html">Vestidos</a>
                 <a href="./zapatos.html">Zapatos</a>
@@ -56,25 +51,24 @@
         </div> 
     </header>
     <main>
-    <form action="login.html" method="POST">
-
+    <form action="{{ url_for('signup')}}" method="post">
         <h4>Sign up</h4><br>
+        
         <label >Nombre</label>
-        <input type="text" name="NickName" placeholder="Ejemplo: Neni2000" required><br><br>
-        <label >Correo</label>
-        <input type="email" name="email" placeholder="Ejemplo: Correo@Real.com" required><br><br>
+        <input type="text" name="NickName"placeholder="Ejemplo: Neni2000" required><br><br>
         <label >Telefono</label>
         <input type="tel"  name="phone" placeholder="Ejemplo: 55 67 58 90 70" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required><br><br>
+        <label >Correo</label>
+        <input type="email" name="email"placeholder="Ejemplo: Correo@Real.com" required><br><br>
         <label >Contrase&ntilde;a</label>
         <input type="password"  name="password" placeholder="Ejemplo: LaNeniStore20!" pattern=".{6,}" required><br><br>
-        <label > Debe contener mas de 6 caracteres </label>
-        <button id="BEnviar" type="submit" >Enviar</button>
+	<label >  Debe contener mas de 6 caracteres </label>
+        <button id="BEnviar" type="submit" value="Sign Up">Enviar</button>
         <audio controls autoplay>
             <source src="../static/audio/Bienvenida.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <a href="index.html"> Pagina principal </a>
-
     </form>
     </main>
     <footer>
