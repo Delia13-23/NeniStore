@@ -36,28 +36,38 @@
                 <p>NeniStore</p>
             </div>
             <div class="col-3 icons">
-                <a href=""><i class="fas fa-user"></i></a>
+                <a href="./login.html"><i class="fas fa-user"></i></a>
                 <a href=""><i class="fas fa-shopping-cart"></i></a>
                 <a href=""><i class="far fa-heart"> 1</i></a>
                 <a href=""><i class="fas fa-gifts"></i></a>
                 <a href=""><i class="far fa-question-circle"></i></a>
                 <a href=""><i class="fas fa-globe"></i></a>
             </div>
+        </div>
+        <div class="div3_header">
+            <nav id="main-nav">
+                <a href="./index.html">Inicio</a>
+                <a href="./novedades.html">Novedades</a>
+                <a href="./vestidos.html">Vestidos</a>
+                <a href="./zapatos.html">Zapatos</a>
+                <a href="./accesorios.html">Accesorios</a>
+                <a href="./hogar.html">Hogar</a>
+            </nav>
         </div> 
     </header>
     <main>
     <form action="login.html" method="POST">
 
         <h4>Sign up</h4><br>
-        <label for="NickName">Nombre</label>
-        <input type="text" name="NickName"placeholder="Ejemplo: Neni2000" required><br><br>
-        <label for="email">Correo</label>
-        <input type="email" name="email"placeholder="Ejemplo: Correo@Real.com" required><br><br>
-        <label for="phone">Telefono</label>
+        <label >Nombre</label>
+        <input type="text" name="NickName" placeholder="Ejemplo: Neni2000" required><br><br>
+        <label >Correo</label>
+        <input type="email" name="email" placeholder="Ejemplo: Correo@Real.com" required><br><br>
+        <label >Telefono</label>
         <input type="tel"  name="phone" placeholder="Ejemplo: 55 67 58 90 70" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required><br><br>
-        <label for="password">Contrase&ntilde;a</label>
+        <label >Contrase&ntilde;a</label>
         <input type="password"  name="password" placeholder="Ejemplo: LaNeniStore20!" pattern=".{6,}" required><br><br>
-        <label for="password" id="Warning"> Debe contener mas de 6 caracteres </label>
+        <label > Debe contener mas de 6 caracteres </label>
         <button id="BEnviar" type="submit" >Enviar</button>
         <audio controls autoplay>
             <source src="../static/audio/Bienvenida.mp3" type="audio/mpeg">

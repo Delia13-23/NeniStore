@@ -105,6 +105,17 @@ header {
     font-size: 1.5em;
     padding: 0 2%;
 }
+/* pixeles */
+.canva{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#resul{
+    width: 404px;
+    height: 404px;
+}
+
 /* Redes */
 .red{
     position: fixed;

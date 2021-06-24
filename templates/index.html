@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/styles.css">
     <script src="https://kit.fontawesome.com/6145ad21c5.js"></script>
+    <script src="../static/js/imagen.js"></script>
     <title>NeniStore</title>
 </head>
+
 <body style="margin: 0%;">
     <header>
         <div class="logo-img">
@@ -32,7 +35,7 @@
                 <p>NeniStore</p>
             </div>
             <div class="col-3 icons">
-                <a href=""><i class="fas fa-user"></i></a>
+                <a href="./login.html"><i class="fas fa-user"></i></a>
                 <a href=""><i class="fas fa-shopping-cart"></i></a>
                 <a href=""><i class="far fa-heart"> 1</i></a>
                 <a href=""><i class="fas fa-gifts"></i></a>
@@ -40,14 +43,15 @@
                 <a href=""><i class="fas fa-globe"></i></a>
             </div>
         </div>
-        <div  class="div3_header">
+        <div class="div3_header">
             <nav id="main-nav">
+                <a href="./index.html">Inicio</a>
                 <a href="./novedades.html">Novedades</a>
                 <a href="./vestidos.html">Vestidos</a>
                 <a href="./zapatos.html">Zapatos</a>
                 <a href="./accesorios.html">Accesorios</a>
                 <a href="./hogar.html">Hogar</a>
-            </nav> 
+            </nav>
         </div>
     </header>
     <main>
@@ -59,20 +63,21 @@
             </div>
         </div>
         <div class="red">
-           <div id="facebook"><a href="https://www.facebook.com/SHEINOFFICIAL" class="fa fa-facebook"></a></div>
-           <div id="instagram"><a href="https://instagram.com/shein_mex?utm_medium=copy_link" class="fab fa-instagram"></a></div>
-           <div id="twitter"><a href="https://twitter.com/SHEIN_official?s=09" class="fa fa-twitter"></a></div>
-           <div id="correo"><a href="#" class="fa fa-envelope"></a></div>
+            <div id="facebook"><a href="https://www.facebook.com/SHEINOFFICIAL" class="fa fa-facebook"></a></div>
+            <div id="instagram"><a href="https://instagram.com/shein_mex?utm_medium=copy_link"
+                    class="fab fa-instagram"></a></div>
+            <div id="twitter"><a href="https://twitter.com/SHEIN_official?s=09" class="fa fa-twitter"></a></div>
+            <div id="correo"><a href="#" class="fa fa-envelope"></a></div>
         </div>
         <section class="contenedor categoria">
-                <h2>Comprar por categoría</h2>
+            <h2>Comprar por categoría</h2>
             <div class="resume__categorias resume__ropa">
-                
+
                 <div class="categorias ropa ropa1">
                     <img src="../static/img/png/005-camiseta.png" alt="Camisetas">
                     Camisetas
                 </div>
-               <div class="categorias ropa ropa1">
+                <div class="categorias ropa ropa1">
                     <img src="../static/img/png/006-vestido.png" alt="Vestidos">
                     Vestidos
                 </div>
@@ -113,30 +118,34 @@
         <section>
             <h2 id="hashtag">#dailydrops</h2>
             <div class="container-slider">
-               <ul class="slider">
-                   <li id="slide1">
-                       <img src="../static/img/moda1.jpg" alt="ropa de dama">
-                   </li>
-                   <li id="slide2">
-                       <img src="../static/img/moda2.jpg" alt="ropa de dama">
-                   </li>
-                   <li id="slide3">
-                       <img src="../static/img/moda5.jpg" alt="ropa de niño">
-                   </li>
-               </ul>
-               <ul class="menu">
-                  <li>
-                      <a href="#slide1">1</a>
-                  </li>
-                  <li>
-                      <a href="#slide2">2</a>
-                  </li>
-                  <li>
-                      <a href="#slide3">3</a>
-                  </li>
-               </ul>
+                <ul class="slider">
+                    <li id="slide1">
+                        <img src="../static/img/moda1.jpg" alt="ropa de dama">
+                    </li>
+                    <li id="slide2">
+                        <img src="../static/img/moda2.jpg" alt="ropa de dama">
+                    </li>
+                    <li id="slide3">
+                        <img src="../static/img/moda5.jpg" alt="ropa de niño">
+                    </li>
+                </ul>
+                <ul class="menu">
+                    <li>
+                        <a href="#slide1">1</a>
+                    </li>
+                    <li>
+                        <a href="#slide2">2</a>
+                    </li>
+                    <li>
+                        <a href="#slide3">3</a>
+                    </li>
+                </ul>
             </div>
         </section>
+        <div class="canva">
+            <img id="resul" src="../static/img/pixeles.jpg" alt="moda" />
+            <canvas id="imagen-canvas" width="404" height="404">Su navegador no soporta <canvas></canvas></canvas>
+        </div>
     </main>
     <footer>
         <div class="grid_footer">
@@ -189,4 +198,5 @@
         </div>
     </footer>
 </body>
+
 </html>
