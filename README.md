@@ -47,3 +47,148 @@
  <img src="https://scontent.fmex24-1.fna.fbcdn.net/v/t1.6435-9/201932708_1446290669103460_8867049843975223449_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_eui2=AeHvaS4wSMf4QlA1QZO_pDeQ_oKqmRlvQvr-gqqZGW9C-lXfb5yDjD94rWZsGLM0nfvNT60pVq2aK2NSuAktfjqK&_nc_ohc=fFJvlJ0XUjIAX_R-lHW&_nc_ht=scontent.fmex24-1.fna&oh=bbc3f53490e093aa87c241edd7faefd9&oe=60D9486C" width="160" height="200">
  
  
+# 🗄️Backend
+
+## ▶️RUN
+
+Para iniciar la app
+
+> python app.py
+
+Para iniciar la base de datos
+
+> sqlite3 nenis.db
+
+## 🗄️MODELS
+
+**Usuarios**
+
+```
+{
+    id = db.Column(db.Integer, primary_key=True)
+    nombre = db.Column(db.String(50), nullable=False)
+    telefono = db.Column(db.Integer, nullable=False)
+    correo = db.Column(db.String(50), unique=True, nullable=False)
+    contrasenia = db.Column(db.String(80), nullable=False)
+}
+```
+
+## 🔌Interfaces
+
+**REGISTRAR**
+> "/signUp.html", methods=["GET", "POST"]
+
+```
+Request
+   "nombre": NickName,
+   "telefono": Phone,
+   "correo": email,
+   "contrasenia": password
+
+Response
+   redirect(url_for('login'))
+```
+**Algorithm**
+1. Obtener usuarios.email = email
+2. Si |usuarios| = 1 entonces
+   1. Regresar {false, "El correo ya está registrado."}
+3. Si no, si |usuarios| = 0 entonces
+   1. Obtener registros.email = email
+   2. Registro exitoso
+4. Si no,
+   1. LOG {INCINSISTENCIA: Hay más de un usuario con el mail EMAIL}
+   2. Regresar {false, "Error en el registro, por favor contacte a soporte."}
+
+### LOGIN
+> **PUT** "/login.html", methods=["GET", "POST"]
+
+```
+Request
+   "correo": email,
+   "contrasenia": password
+
+Response
+   render_template("index.html")
+```
+**Algorithm**
+1. Obtener usuarios.correo = email, usuarios.contrasenia = password, usuarios.active = true
+2. Si |usuarios| = 0 entonces
+   1. Regresar {false, "Usuario y/o contraseña incorrectos."}
+3. Si no, si |usuarios| = 1 entonces
+   1. usuario.token ← TOKEN
+   2. Regresar {true, "", TOKEN}
+4. Si no,
+   1. LOG {INCINSISTENCIA: Hay más de un usuario con EMAIL PASS}
+   2. Regresar {false, "Error en el login, por favor contacte a soporte."}
+
+### Pintar tabla con datos
+> **READ** '/usuarios.html'
+
+```
+
+Request
+   usuario = Usuarios.query.all()
+
+Response
+   render_template("usuarios.html", lista_usuarios=usuario)
+```
+**Algorithm**
+1. Obtener usuarios con user,activo
+2. Si |usuarios| = 0 entonces
+   1. LOG {"nO EXISTEN USUARIOS"}
+3. Si no, si |usuarios| = 1 entonces
+   1. Pintar tabla
+
+### CAMBIAR DATOS
+> **PUT** '/update', methods = ['GET', 'POST']
+
+```
+Request
+   "nombre": NickName,
+   "telefono": Phone,
+   "correo": email
+
+Response
+   redirect(url_for('usuarios'))
+```
+**Algorithm**
+1. Obtener usuarios con user,activo
+2. Si |usuarios| = 0 entonces
+   1. LOG {ATAQUE: "No autorizado EMAIL "}
+   2. Regresar {false, "Error en las credenciales."}
+3. Si no, si |usuarios| = 1 entonces
+   1. usurio.pass ← PASS
+   2. Regresar {true, "Se ha restablecido su contraseña."}
+4. Si no,
+   1. LOG {INCINSISTENCIA: Hay más de un usuario con EMAIL}
+   2. Regresar {false, "Error al restablecer su contraseña, por favor contacte a soporte"}
+
+### ELIMINAR USUARIO
+> **DELETE** '/delete/<id>'
+
+```
+
+Request
+   id=int(id)
+
+Response
+   redirect(url_for('usuarios'))
+```
+**Algorithm**
+1. Obtener usuarios con user,activo
+2. Si |usuarios| = 0 entonces
+   1. LOG {ATAQUE: "No autorizado EMAIL "}
+   2. Regresar {false, "Error en las credenciales."}
+3. Si no, si |usuarios| = 1 entonces
+   1. Si user_ext ϵ usuario.suscritos entonces
+      1. usuario.suscritos - user_ext
+      2. user_ext.id_counter_ext <- ""
+      3. Regresar {true, "Usuario eliminado correctamente."}
+   2. Si no,
+      1. Regresar {false, "El usuario no está suscrito."}
+4. Si no,
+   1. LOG {INCINSISTENCIA: Hay más de un usuario con EMAIL}
+   2. Regresar {false, "Error, por favor contacte a soporte"}
+
+
+   
