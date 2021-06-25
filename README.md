@@ -47,15 +47,23 @@
  <img src="https://scontent.fmex24-1.fna.fbcdn.net/v/t1.6435-9/201932708_1446290669103460_8867049843975223449_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_eui2=AeHvaS4wSMf4QlA1QZO_pDeQ_oKqmRlvQvr-gqqZGW9C-lXfb5yDjD94rWZsGLM0nfvNT60pVq2aK2NSuAktfjqK&_nc_ohc=fFJvlJ0XUjIAX_R-lHW&_nc_ht=scontent.fmex24-1.fna&oh=bbc3f53490e093aa87c241edd7faefd9&oe=60D9486C" width="160" height="200">
  
  
+## Audio
+- Se encuentra al final de la pagina de registro
+<img src="https://scontent.fmex5-1.fna.fbcdn.net/v/t1.6435-9/201909792_1446890799043447_2292908392332828194_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=8bfeb9&_nc_eui2=AeGRz5uDadxHUWtbkkh_LwY37rkiJPhb67ruuSIk-FvrupqpQ3xjBR2pet5jigmeRfOLbR5B925SBIwBA8snwMQ9&_nc_ohc=Kx7YJcVNElYAX-WVOgK&_nc_ht=scontent.fmex5-1.fna&oh=309ad219688b19baa8769e0d3d2270e4&oe=60D9AE45" width="250" height="50">
+ 
 # 🗄️Backend
 
 ## ▶️RUN
 
-Para iniciar la app
+Para iniciar la app, ejecute el siguiente comando en la terminal con la dirección en donde se encuentra el proyecto
 
 > python app.py
 
-Para iniciar la base de datos
+Installe SQLAlquemy la biblioteca de python 
+
+> pip install Flask-SQLAlchemy   
+
+Para iniciar la base de datos ejecute, en caso de ser necesario, lo siguiente
 
 > sqlite3 nenis.db
 
