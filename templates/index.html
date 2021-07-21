@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
     <script src="https://kit.fontawesome.com/6145ad21c5.js"></script>
+    <script src="../static/js/imagen.js"></script>
     <title>NeniStore</title>
 </head>
+
 <body style="margin: 0%;">
     <header>
-        <div>
-            <h1 class="h1-1">Código de promoción - Envío GRATIS - <i class="fas fa-plane-departure"></i></h1>
-            <h2 class="h1-1"> Nos vemos en punto medio <i class="fab fa-angellist"></i></h2>
+        <div class="logo-img">
+            <div>
+                <img src="../static/img/logo.png" width="200" height="200" alt="Logo">
+            </div>
+            <div class="h1-principal">
+                <h1 class="h1-1">Código de promoción - Envío GRATIS - <i class="fas fa-plane-departure"></i></h1>
+                <h2 class="h1-1"> Nos vemos en punto medio <i class="fab fa-angellist"></i></h2>
+            </div>
         </div>
         <div class="row div2_header">
             <div>
                 <nav class="menu1 col-5">
-                    <a href="">Mujer</a>
-                    <a href="">Curvy + plus</a>
-                    <a href="">Hombre</a>
-                    <a href="">Niños</a>
-                    <a href="">Maquillaje</a>
+                    <a href="./usuarios.html">Usuarios</a>
                 </nav>
             </div>
             <div class="col-4 titulo">
                 <p>NeniStore</p>
             </div>
             <div class="col-3 icons">
-                <a href=""><i class="fas fa-user"></i></a>
+                <a href="./login.html"><i class="fas fa-user"></i></a>
                 <a href=""><i class="fas fa-shopping-cart"></i></a>
                 <a href=""><i class="far fa-heart"> 1</i></a>
                 <a href=""><i class="fas fa-gifts"></i></a>
@@ -35,79 +39,118 @@
                 <a href=""><i class="fas fa-globe"></i></a>
             </div>
         </div>
-        <div  class="div3_header">
-            <nav>
-                <a href="">Novedades</a>
-                <a href="">Vestidos</a>
-                <a href="">Tops</a>
-                <a href="">Bikinis</a>
-                <a href="">Zapatos</a>
-                <a href="">Accesorios</a>
-                <a href="">Hogar</a>
-            </nav> 
+        <div class="div3_header">
+            <nav id="main-nav">
+                <a href="./">Inicio</a>
+                <a href="./novedades.html">Novedades</a>
+                <a href="./vestidos.html">Vestidos</a>
+                <a href="./zapatos.html">Zapatos</a>
+                <a href="./accesorios.html">Accesorios</a>
+                <a href="./hogar.html">Hogar</a>
+            </nav>
         </div>
     </header>
     <main>
         <div class="principal">
             <div class="principal-img">
                 <div class="imagen-principal">
-                    <img src="img/img_principal.png" alt="" class="imagen-about-us">
+                    <img src="../static/img/img_principal.png" alt="" class="imagen-about-us">
                 </div>
             </div>
         </div>
+        <div class="red">
+            <div id="facebook"><a href="https://www.facebook.com/SHEINOFFICIAL" class="fa fa-facebook"></a></div>
+            <div id="instagram"><a href="https://instagram.com/shein_mex?utm_medium=copy_link"
+                    class="fab fa-instagram"></a></div>
+            <div id="twitter"><a href="https://twitter.com/SHEIN_official?s=09" class="fa fa-twitter"></a></div>
+            <div id="correo"><a href="#" class="fa fa-envelope"></a></div>
+        </div>
         <section class="contenedor categoria">
-                <h2>Comprar por categoría</h2>
+            <h2>Comprar por categoría</h2>
             <div class="resume__categorias resume__ropa">
-                
+
                 <div class="categorias ropa ropa1">
-                    <img src="img/png/005-camiseta.png" alt="Camisetas">
+                    <img src="../static/img/png/005-camiseta.png" alt="Camisetas">
                     Camisetas
                 </div>
-               <div class="categorias ropa ropa1">
-                    <img src="img/png/006-vestido.png" alt="Vestidos">
+                <div class="categorias ropa ropa1">
+                    <img src="../static/img/png/006-vestido.png" alt="Vestidos">
                     Vestidos
                 </div>
                 <div class="categorias ropa ropa1">
-                    <img src="img/png/002-blusa-mujer.png" alt="Blusas">
+                    <img src="../static/img/png/002-blusa-mujer.png" alt="Blusas">
                     Blusas
                 </div>
                 <div class="categorias ropa ropa1">
-                    <img src="img/png/004-ropa-interior.png" alt="Trajes de baño">
+                    <img src="../static/img/png/004-ropa-interior.png" alt="Trajes de baño">
                     Trajes de baño
                 </div>
                 <div class="categorias ropa ropa1">
-                    <img src="img/png/001-top-corto.png" alt="Tops sin mangas">
+                    <img src="../static/img/png/001-top-corto.png" alt="Tops sin mangas">
                     Tops sin mangas
                 </div>
                 <div class="categorias ropa ropa2">
-                    <img src="img/png/008-falda-pantaln.png" alt="Bottoms">
+                    <img src="../static/img/png/008-falda-pantaln.png" alt="Bottoms">
                     Bottoms
                 </div>
                 <div class="categorias ropa ropa2">
-                    <img src="img/png/007-pantalones.png" alt="Denim">
+                    <img src="../static/img/png/007-pantalones.png" alt="Denim">
                     Denim
                 </div>
                 <div class="categorias ropa ropa2">
-                    <img src="img/png/003-lencera.png" alt="Pijamas y lencerías">
+                    <img src="../static/img/png/003-lencera.png" alt="Pijamas y lencerías">
                     Pijamas y lencerías
                 </div>
                 <div class="categorias ropa ropa2">
-                    <img src="img/png/009-ropa-deportiva.png" alt="Monos y conjuntos">
+                    <img src="../static/img/png/009-ropa-deportiva.png" alt="Monos y conjuntos">
                     Monos y conjuntos
                 </div>
                 <div class="categorias ropa ropa2">
-                    <img src="img/png/001-flecha-correcta.png" alt="Ver todo">
+                    <img src="../static/img/png/001-flecha-correcta.png" alt="Ver todo">
                     Ver todo
                 </div>
             </div>
         </section>
+        <section>
+            <h2 id="hashtag">#dailydrops</h2>
+            <div class="container-slider">
+                <ul class="slider">
+                    <li id="slide1">
+                        <img src="../static/img/moda1.jpg" alt="ropa de dama">
+                    </li>
+                    <li id="slide2">
+                        <img src="../static/img/moda2.jpg" alt="ropa de dama">
+                    </li>
+                    <li id="slide3">
+                        <img src="../static/img/moda5.jpg" alt="ropa de niño">
+                    </li>
+                </ul>
+                <ul class="menu">
+                    <li>
+                        <a href="#slide1">1</a>
+                    </li>
+                    <li>
+                        <a href="#slide2">2</a>
+                    </li>
+                    <li>
+                        <a href="#slide3">3</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="canva">
+            <img id="resul" src="../static/img/pixeles.jpg" alt="imagen con pixeles">
+            <canvas id="imagen-canvas" width="404" height="404">Su navegador no soporta <canvas></canvas></canvas>
+        </div>
     </main>
     <footer>
         <div class="grid_footer">
             <div>
                 <h2>NeniStore</h2>
                 <h3 class="h3-footer-1">Contactos</h3>
-                <p>edith@CorreoFalso.com</p>
+                <p>Delia Nallely De Lira Bernal</p>
+                <p>Angel Yair Chavez Garcia</p>
+                <p>Edith Jimenez Pineda</p>
                 <p>De lunes a viernes de 9:00am a 6:00pm</p>
             </div>
             <div>
@@ -151,4 +194,5 @@
         </div>
     </footer>
 </body>
+
 </html>
